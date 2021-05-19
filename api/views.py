@@ -15,7 +15,7 @@ class Table(BaseModel):
 
 
 @router.get("/show-all-data/")
-def showall():
+def Show_All():
     data = list(models.EmployeeTable.objects.values('Name')) #Fetching Names from the table and showing the list of Employees
     return data
 
