@@ -4,7 +4,10 @@ from fastapi import APIRouter, Request
 from pydantic.types import Json
 from api import models
 from pydantic import BaseModel
+from fastapi.templating import Jinja2Templates
 router = APIRouter()
+
+templates = Jinja2Templates(directory="templates")
 
 class Table(BaseModel):
     Name: str
@@ -48,6 +51,8 @@ router2 = APIRouter()
 
 
 @router2.get('/showall')
-async def show_all():
+def show_all():
     data = list(models.EmployeeTable.objects.all().filter(Group = 'SDE1').values('Name')) #Filters the DB for SDE1 and shows their names
     return data
+
+
