@@ -1,7 +1,7 @@
 
 import os
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SECRET_KEY = 'django-insecure-gz9^#89w^^=pu7pw*@oevu*8x$zxi!yr8-hft^@9+ni$gttupb'
+SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = True
 ALLOWED_HOSTS = []
 INSTALLED_APPS = [
