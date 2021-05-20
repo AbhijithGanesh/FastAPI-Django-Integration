@@ -40,6 +40,6 @@ def get_application():
 
     #This will include all the static files in the statics folder
     return app
-
-
+    
 app = get_application()
+
