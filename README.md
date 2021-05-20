@@ -1,3 +1,7 @@
+
+
+![Screenshot_2021-05-20 Untitled design(1)](https://user-images.githubusercontent.com/67182544/118919500-41f58b80-b952-11eb-93c4-2be3facffd47.png)
+
 FastAPI-Django API 
 ===================================================================================================================================================================================
 What is the FastAPI?
@@ -37,5 +41,8 @@ Step 4: Run the app using command 4
 1> git clone https://github.com/AbhijithGanesh/FastAPI-Django-Integration
 2> python -m venv VirtualEnvironment
 3> pip install -r requirements.txt
-4> uvicorn TestingProject.asgi:app --debug
+4> manage.py makemigrations
+5> manage.py migrate
+6> manage.py createsuperuser
+7> uvicorn TestingProject.asgi:app --debug
 ```
