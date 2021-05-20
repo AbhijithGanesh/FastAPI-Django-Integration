@@ -1,6 +1,8 @@
 
+<img src="https://user-images.githubusercontent.com/67182544/118919993-2939a580-b953-11eb-896f-42417871aa7d.png" width="300" height="100">
 
-![Screenshot_2021-05-20 Untitled design(1)](https://user-images.githubusercontent.com/67182544/118919500-41f58b80-b952-11eb-93c4-2be3facffd47.png)
+
+
 
 FastAPI-Django API 
 ===================================================================================================================================================================================
