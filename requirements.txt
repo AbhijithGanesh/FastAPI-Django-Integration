@@ -15,5 +15,5 @@ sqlparse==0.4.1
 starlette==0.14.2
 typing-extensions==3.10.0.0
 uvicorn==0.13.4
-uvloop==0.14.0
+uvloop
 whitenoise==5.2.0
