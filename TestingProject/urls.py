@@ -8,4 +8,5 @@ urlpatterns = [
     path('', On_Landing),
     path('Project/', include('WorkingApp.urls'))
 ]
+
 urlpatterns.append(staticfiles_urlpatterns())
