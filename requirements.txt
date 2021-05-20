@@ -1,4 +1,5 @@
 aiofiles==0.7.0
+asgiref
 Django==3.2.3
 gunicorn==20.1.0 
 jinja2
