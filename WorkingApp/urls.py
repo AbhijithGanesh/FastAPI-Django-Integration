@@ -8,4 +8,4 @@ urlpatterns = [
     path('', LandingPage)
 ]
 
-urlpatterns.append(staticfiles_urlpatterns)
+urlpatterns.append(staticfiles_urlpatterns())
