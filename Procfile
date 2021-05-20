@@ -1,4 +1,4 @@
 python-3.9.4
-web: uvicorn TestingProject.asgi:app --reload
+web: gunicorn -w 4 -k uvicorn.workers.UvicornWorker TestingProject.asgi:app
 python manage.py makemigrations
 python manage.py migrate

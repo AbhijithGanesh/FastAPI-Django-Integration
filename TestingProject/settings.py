@@ -2,9 +2,10 @@ import os
 
 PROJECT_NAME = 'Integrating FastAPI with Django'
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-SECRET_KEY = os.environ.get('SECRET_KEY')
-DEBUG = False
-ALLOWED_HOSTS = ['localhost', '.herokuapp.com']
+SECRET_KEY = 'DonBradman'
+#os.environ.get('SECRET_KEY')
+DEBUG = True
+ALLOWED_HOSTS = ['127.0.0.1','localhost', 'fastapi-over-django.herokuapp.com']
 INSTALLED_APPS = [
     "django.contrib.admin",
     "django.contrib.auth",
