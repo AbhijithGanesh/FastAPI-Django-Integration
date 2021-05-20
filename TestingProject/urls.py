@@ -9,4 +9,4 @@ urlpatterns = [
     path('Project/', include('WorkingApp.urls'))
 ]
 
-#urlpatterns+staticfiles_urlpatterns()
+urlpatterns+staticfiles_urlpatterns()
