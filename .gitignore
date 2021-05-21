@@ -1,1 +1,4 @@
 *.pyc/
+TestingProject/__pycache__
+api/__pycache__
+WorkingApp/__pycache__

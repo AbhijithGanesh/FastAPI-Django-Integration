@@ -1,0 +1,25 @@
+version: '3.9'
+
+services:
+  nginx:
+    build: ./TestingProject/nginx
+    volumes:
+      - static_volume:/home/app/microservice/static
+    depends_on:
+      - web
+  web:
+    build: . #build the image for the web service from the dockerfile in parent directory
+    command: sh -c "python manage.py makemigrations &&
+                    python manage.py migrate &&
+                    python manage.py collectstatic &&
+                    gunicorn TestingProject.asgi:app -w 4 -k uvicorn.workers.UvicornWorker"
+    volumes:
+      - .:/microservice:rw # map data and files from parent directory in host to microservice directory in docker containe
+      - static_volume:/home/app/microservice/static
+    env_file:
+      - .env
+    image: TestingProject
+    restart: "on-failure"
+    
+volumes:
+  static_volume:
