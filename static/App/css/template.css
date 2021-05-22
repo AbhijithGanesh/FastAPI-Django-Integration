@@ -594,6 +594,7 @@ banner
     top: 0;
     left: 0;
     bottom: 7px;
+    height:100%;
     width: 100%;
 }
 
