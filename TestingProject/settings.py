@@ -1,8 +1,12 @@
 import os
+import dotenv
 PROJECT_NAME = 'Integrating FastAPI with Django'
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+dotenv_file = os.path.join(BASE_DIR, ".env")
+if os.path.isfile(dotenv_file):
+    dotenv.load_dotenv(dotenv_file)
 SECRET_KEY = os.environ['SECRET_KEY']
-# SECRET_KEY = 'secret'
+
 DEBUG = False
 ALLOWED_HOSTS = ['127.0.0.1','localhost', 'fastapi-over-django.herokuapp.com', '*']
 INSTALLED_APPS = [
