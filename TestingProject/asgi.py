@@ -32,7 +32,7 @@ def get_application():
     )
     app.include_router(router, prefix="/api")
     app.include_router(router2,prefix='/v2') #Example Where Multiple Routers can be mapped.
-    
+    app.mount("/Application", WSGIMiddleware(get_wsgi_application()))
     app.mount("", WSGIMiddleware(get_wsgi_application()))
     #FastAPI doesn't have a ASGIMiddleWare --> Version:0.65.1
 
