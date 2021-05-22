@@ -1,8 +1,7 @@
-FROM python:3.9
+FROM python:3.9.5
 #Py: 3.9.5 was the most recent version
 
 ENV MICRO_SERVICE=/home/app/microservice
-RUN addgroup -S $APP_USER && adduser -S $APP_USER -G $APP_USER
 # set work directory
 
 
@@ -15,13 +14,6 @@ WORKDIR $MICRO_SERVICE
 # set environment variables
 ENV PYTHONDONTWRITEBYTECODE 1
 ENV PYTHONUNBUFFERED 1
-
-# install psycopg2 dependencies
-RUN apk update \
-    && apk add --virtual build-deps gcc python3-dev musl-dev \
-    && apk del build-deps \
-    && apk --no-cache add musl-dev linux-headers g++
-
 RUN pip install --upgrade pip
 COPY . $MICRO_SERVICE
 RUN pip install -r requirements.txt
