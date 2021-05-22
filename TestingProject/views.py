@@ -1,4 +1,4 @@
 from django.shortcuts import render
 
 def On_Landing(request):
-    return render(request, 'App/index.html')
+    return render(request, 'templates/App/index.html')

@@ -1,12 +1,11 @@
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import path, include, re_path
 from .views import On_Landing
-from django.contrib.staticfiles.urls import staticfiles_urlpatterns
 
 urlpatterns = [
-    path('admin/', admin.site.urls),
+    path('admin', admin.site.urls),
     path('', On_Landing),
-    path('Project/', include('WorkingApp.urls'))
+    path('Project/', include('WorkingApp.urls')),
 ]
 
 
