@@ -16,7 +16,6 @@ apps.populate(settings.INSTALLED_APPS)
 
 #Do not Import the Views before configuring the apps, If done so, it will result in an ImproperlyConfigured Exception
 
-
 #Importing the Views from API Module to route the API
 from api.views import router,router2
 
