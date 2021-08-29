@@ -1,13 +1,16 @@
-from os import name
+import os
 from typing import *
 from fastapi import APIRouter, Request
 from pydantic.types import Json
 from api import models
 from pydantic import BaseModel
 from fastapi.templating import Jinja2Templates
+
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+
 router = APIRouter()
 
-templates = Jinja2Templates(directory="templates")
+templates = Jinja2Templates(directory = os.path.join(BASE_DIR,"templates"))
 
 class Table(BaseModel):
     Name: str
