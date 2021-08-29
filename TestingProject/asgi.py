@@ -16,7 +16,7 @@ apps.populate(settings.INSTALLED_APPS)
 
 #Do not Import the Views before configuring the apps, If done so, it will result in an ImproperlyConfigured Exception
 
-
+from whitenoise import DjangoWhiteNoise
 #Importing the Views from API Module to route the API
 from api.views import router,router2
 
@@ -41,5 +41,5 @@ def get_application():
     #This will include all the static files in the statics folder
     return app
     
-app = get_application()
+app = DjangoWhiteNoise(get_application())
 
