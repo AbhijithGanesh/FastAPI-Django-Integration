@@ -1,50 +1,76 @@
 {%load static%}
-<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
-    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i&display=swap"  rel="stylesheet">
-    <link rel="icon" href='{%static "APP/images/logo.jpeg" %}'> 
-    <title>Landing Page</title>
-    <link rel="stylesheet" type="text/css" href='{%static "APP/css/bootstrap.min.css"%}'>
-    <link rel="stylesheet" type="text/css" href='https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css'>
-    <link rel="stylesheet" href='{%static "App/css/template.css" %}'>
-    </head>
-    
-    <body>
-    <header class="header-area">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav class="main-nav">
-                        <img align="left" src = '{%static "App/images/logo.jpeg"%}' width =75px>
-                        <p class="logo">FAST<em>API</em>- OVER - <em>DJANGO</em></p>
-                        <img align = "right" src = '{%static "App/images/Django.jpeg"%}' width = 173px>
-                    </nav>
-                </div>
-            </div>
-        </div>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>FastAPI-over-Django</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href='{%static "App/css/app.css" %}' />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-area navbar-dark">
+            <nav class="main-nav">
+              <img
+                align="left"
+                src = '{%static "App/images/logo.jpeg"%}'
+                width="75px"
+                alt="FastAPI logo"
+              />
+              <h3><p class="fontStyle">FAST<b>API</b>-OVER-<b>DJANGO</b></p></h3>
+            </nav>
     </header>
-
-    <div class="main-banner" id="top">
-        <video autoplay muted loop id="bg-video">
-        </video>
-        <div class="video-overlay header-text">
-            <div class="caption">
-                <h6>Django simplified with the power of Fast API</h6>
-                <h2>Done easy<br><em>Check the Github Repo</em></h2>
-                <div class="main-button scroll-to-section">
-                    <a href="https://github.com/AbhijithGanesh/FastAPI-Django-Integration">View The Repository</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>    
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
-    </body>
+    <section class="FontAlign">
+      <h6>Django Simplified with the power of FastAPI</h6>
+      <h2>Done easy<br /><b>Check the Github</b><u> <a href = "https://github.com/AbhijithGanesh/FastAPI-Django-Integration">Repository</u></a></h2>
+      <button type="button" class="btn Button">
+        <a href="https://github.com/AbhijithGanesh/FastAPI-Django-Integration"
+          >View The Simple Hello-World Django APP</a
+        >
+      </button>
+      <button type="button" class="btn Button">
+        <a href="https://github.com/AbhijithGanesh/FastAPI-Django-Integration"
+          >View The Documentation of this API</a
+        >
+      </button>
+      <button type="button" class="btn Button">
+        <a href="https://github.com/AbhijithGanesh/FastAPI-Django-Integration"
+          >View The API returning JSON</a
+        >
+      </button>
+      
+    </section>
+    <footer>
+        <h4><u>Designed by Abhijith Ganesh 	&#169;</u></h4>
+    </footer>
+  </body>
+  <script
+    src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"
+  ></script>
 </html>
