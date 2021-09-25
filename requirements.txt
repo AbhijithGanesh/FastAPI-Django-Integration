@@ -2,7 +2,7 @@ aiofiles==0.7.0
 asgiref==3.3.4
 dataclasses
 python-dotenv
-Django==3.2.4
+Django==3.2.5
 fastapi==0.65.2
 gunicorn==20.1.0
 h11==0.12.0
